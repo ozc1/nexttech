@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="pay.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextTech - pay</title>
+    
+    <script src="javascript/form.js"></script>
+    <script src="javascript/pic.js"></script>
+    <script src="javascript/calc.js"></script>
+</head>
+<body>
+    <header class="container_fluid">
+        <div class="container">
+            <div class="pic">
+                <img src="image/logo.webp" alt="" id="main_logo">
+            </div>
+            <div class="navigation">
+                <nav class="navi">
+                    <a href="index.html">Home Page</a>
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">contact us</a>
+                    <a href="pay.html">pay</a>
+    
+                </nav>
+            </div>
+
+        </div>
+        <div class="container_fluid">
+            
+
+        </div>
+    </header>
+    <main>
+        <div class="mainn container">
+            <div class="formm">
+                <form action="" method="get" target="_blank" >
+                    <table>
+                        <tr>
+                            <td><label for="fullname">FullName</label></td>
+                            <td><input type="text" name="username" required placeholder="fullname" id="fname" onload="fullName()"></td>
+                            <td><div id="msgBox1"></div></td>
+                        </tr>
+                        </tr>
+                            <td><label for="phonenum">Phone Number</label></td>
+                            <td><input type="tel" name="telnum" required placeholder="phone number" id="phone"></td>
+                            <tr><div id="msgBox6"></div></tr>
+                        </tr>
+                        <tr>
+                            <td><label for="mail">Mail Address</label></td>
+                            <td><input type="email" name="mail" required placeholder="email" id="email"></td>
+                            <tr><div id="msgBox5"></div></tr>
+                        </tr>
+                        <tr>
+                            <td><label for="us">UserName</label></td> 
+                            <td><input type="text" name="us" id="username" required placeholder="username"></td>
+                            <td><div id="msgBox2"></div></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pass">Password</label></td>
+                            <td><input type="password" id="password" required placeholder = "password" ></label></td>
+                            <td><div id="msgBox3"></div></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pass">confirm Password</label></td>
+                            <td><input type="password" id="confirm" required placeholder = "confirm password" ></label></td>
+                            <td><div id="msgBox4"></div></td>
+                        </tr>
+                        <tr>
+                            <td><label for="choose">Select a product</label></td>
+                            <td>
+                                <select name="carselect" id="selectcar" required onchange="picChange()">
+                                    <option value="image/445725db-2a7f-4bba-a464-0bb2d93d6527.webp"></option>
+                                    <option value="image/pc.jpg">PC</option>
+                                    <option value="image/iphone.png">Iphone 16 PRO</option>
+                                    <option value="image/galaxy.png">Galaxy S 24 ULTRA</option>
+                                    <option value="image/ps5pro.avif">Playstation 5 PRO</option>
+                                    <option value="image/xbox.png">Xbox Seriess X</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="quant">choose amount pls</label>
+                            </td>
+                            <td>
+                                <input type="number" required id="quant" oninput="calc()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="price" id="ltprice">total amount</label>
+                            </td>
+                            <td>
+                                <h2 id="tprice"></h2>
+                            </td>
+                        </tr>
+
+                        <td><label for="pay">Choose payment type</label></td>
+                                    <td><input type="radio" name="paym" id="Cash">cash</td>
+                                    <td><input type="radio" name="paym" id="Credit">credit</td>
+                                    <td><input type="radio" name="paym" id="Paypal"><a href="https://www.paypal.com/il/home">paypal</a></td>
+                    <tr>
+                    <tr>
+                        <td><label for="imp">Verify the order</label></td>
+                        <td><input type="checkbox" id="crfm" required>Confirm</td>
+                        <tr>
+                    <tr>
+                        <td colspan="2" style="padding-bottom: 100px;">
+                            <button type="submit"  onclick="validateForm()">send</button>
+                            <button type="reset">reset</button>
+                        </td>
+                    </tr>
+                </table>
+    </main>
+    <footer>
+    </div>
+        <div>
+            <img src="image/445725db-2a7f-4bba-a464-0bb2d93d6527.webp" alt="" id="paymentpic">
+            <p>© 2024 NextTech - All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+<script src=javascript/form.js></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="contact us.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextTech - Contact Us</title>
+</head>
+<body>
+    <header class="container_fluid">
+        <div class="container">
+            <div class="pic">
+                <img src="image/logo.webp" alt="NextTech Logo" id="main_logo">
+            </div>
+            <div class="navigation">
+                <nav class="navi">
+                    <a href="index.html">Home Page</a>
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="pay.html">Pay</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-form-section">
+            <h1>Get in Touch</h1>
+            <p>Have questions? We'd love to hear from you. Fill out the form below and we'll get back to you soon.</p>
+
+            <form action="php/contact.php" method="post" class="contact-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="container_fluid">
+        <p>© 2024 NextTech - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
